@@ -4,8 +4,44 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #d5e1ef;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  width: 90vw;
+  height: 40rem;
+}
+
+.card {
+  border-radius: 5rem;
+  flex: 0.5;
+  cursor: pointer;
+  transition: flex 1s;
+}
+
+.card.expanded {
+  flex: 6;
+}
+
+.card:first-of-type {
+  background: url('assets/hector-marquez.webp') no-repeat center center / cover;
+}
+
+.card:nth-of-type(2) {
+  background: url('assets/olga-stalska.webp') no-repeat center center / cover;
+}
+
+.card:nth-of-type(3) {
+  background: url('assets/paula-porto.webp') no-repeat center center / cover;
+}
+
+.card:nth-of-type(4) {
+  background: url('assets/vinicius-henrique.webp') no-repeat center center /
+    cover;
 }
