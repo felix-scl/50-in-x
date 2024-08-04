@@ -15,7 +15,8 @@ body {
   display: flex;
   gap: 1rem;
   width: 90vw;
-  height: 40rem;
+  height: 90vh;
+  min-height: 20rem;
 }
 
 .card {
@@ -44,4 +45,13 @@ body {
 .card:nth-of-type(4) {
   background: url('assets/vinicius-henrique.webp') no-repeat center center /
     cover;
+}
+
+.card:nth-of-type(5) {
+  background: url('assets/mario-la-pergola.webp') no-repeat center center /
+    cover;
+}
+
+.card:nth-of-type(6) {
+  background: url('assets/mauro-lima.webp') no-repeat center center / cover;
 }
